@@ -100,7 +100,7 @@ body {
 /*----------HERO-SECTION------------*/
 .hero {
     min-width: 100%;
-    background-image: url(/img/Slider.jpg);
+    background-image: url(../img/Slider.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,4 +201,5 @@ body {
 .benefits-item-link {
     margin-top: auto;
     margin-bottom: 0px;
+    max-width: 103px;
 }
