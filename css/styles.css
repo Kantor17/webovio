@@ -21,9 +21,9 @@ li {
 }
 
 body {
+    font-size: 16px;
     font-family: "Poppins", sans-serif;
 }
-
 .wrapper {
     overflow: hidden;
 }
@@ -153,9 +153,13 @@ body {
 }
 
 @media (max-width: 800px) {
+    .benefits {
+        padding: 70px 0px 75px 0px;
+    }
     .benefits-list {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        gap: 0px;
     }
 }
 
@@ -226,6 +230,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media(max-width: 800px) {
+    .footer {
+        padding: 250px 0px 30px 0px;
+    }
+
+}
 .top-footer {
     border-bottom: solid 1px #5D6544;
     padding-bottom: 52px;
@@ -240,6 +250,9 @@ body {
     line-height: 250%;
     color: #FFFFFF;
     font-style: normal;
+}
+.footer-column {
+    width: 165px;
 }
 .footer-column-title {
     padding-bottom: 21px;
@@ -264,6 +277,7 @@ body {
 .footer-contact-title {
     margin-bottom: 8px;
 }
+
 .mid-footer {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -273,11 +287,11 @@ body {
 .mid-left-footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     border-right: solid 1px #5D6544;
 }
 .mid-right-footer {
-    margin-left: 20%;
+    padding-left: 20%;
     max-width: 322px;
 }
 .mid-right-footer .footer-column-text {
@@ -290,12 +304,21 @@ body {
         border-bottom: solid 1px #5D6544;
     }
     .mid-right-footer {
-        margin: 0 auto;
-        /* margin-left: 0; */
+        padding: 0px;
     }
     .mid-footer {
         padding: 10px 0px;
         grid-template-columns: none;
+    }
+}
+@media(max-width: 515px) {
+    .footer-column {
+        width: 100%;
+    }
+    .footer-column-list {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
     }
 }
 .mid-right-footer .footer-column-text {
@@ -328,4 +351,12 @@ body {
 .footer-logo {
     max-width: 200px;
     max-height: 35px;
+}
+@media (max-width: 440px) {
+    .hero-title, .get-started-title {
+        font-size: 50px;
+    }
+    .get-started-title {
+        font-size: 45px;
+    }
 }
